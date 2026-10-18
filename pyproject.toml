@@ -1,0 +1,17 @@
+[project]
+name = "dockerized-etl-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alex-look-987", email = "sqrpshr.23@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+dockerized-etl-pipeline = "dockerized_etl_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
