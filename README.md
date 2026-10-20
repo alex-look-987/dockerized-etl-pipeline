@@ -5,6 +5,6 @@
 ## Add-Ons to be implemented
 
 1. UV package management
-2. Modularization (pipeline.py script)
-3. Entended project management (folders and files accordingly)
+2. Modularization (pipeline.py script to src/)
+3. CookieCutter directory structure implementation
 4. Make commands
