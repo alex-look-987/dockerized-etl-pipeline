@@ -6,7 +6,6 @@
 
 1. UV package management
     - Create virtualenv
-    - Modify Dockerfile to use uv virtualenv
 2. Modularization (pipeline.py script to src/)
 ```bash
     └── src/
@@ -42,3 +41,6 @@
 └── src/
 ```
 4. Make commands
+5. Docker refactor and build
+    -  `refactor:` Code and fils reorganization
+    -  `build:` Dockerfile change from pip to uv
