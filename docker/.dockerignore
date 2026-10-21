@@ -1,0 +1,9 @@
+# Archivo: .dockerignore
+__pycache__
+*.pyc
+.git
+.venv
+.env
+node_modules
+*.md
+.DS_Store
