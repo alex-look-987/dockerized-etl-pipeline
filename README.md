@@ -25,9 +25,6 @@
 ├── requirements.txt          # (estaba escrito "requiriments.txt")
 ├── .env.example              # credenciales de DB, sin secretos reales
 ├── .gitignore
-├── docker/
-│   ├── Dockerfile
-│   └── docker-compose.yml
 ├── init-db/
 │   └── schema.sql
 ├── data/
@@ -44,3 +41,9 @@
 5. Docker refactor and build
     -  `refactor:` Code and fils reorganization
     -  `build:` Dockerfile change from pip to uv
+    -  Docker folder management:
+```bash
+        ├── docker/
+        │   ├── Dockerfile
+        │   └── docker-compose.yml
+```
