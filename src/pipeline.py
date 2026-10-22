@@ -2,9 +2,9 @@
 """Mini pipeline ETL: CSV -> limpieza -> PostgreSQL"""
 
 from pathlib import Path
-from src.extract import read_csv
-from src.transform import clean_rows
-from src.load import load_to_db, wait_db
+from extract import read_csv
+from transform import clean_rows
+from load import load_to_db, wait_db
 
 if __name__ == '__main__':
     print("=" * 50)
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     print("\nExtrayendo datos del CSV...")
     BASE_DIR = Path(__file__).resolve().parent.parent # raíz de mi-pipeline-docker/
 
-    ruta_datos_raw = BASE_DIR / "data" /  "ventas_raw.csv"
+    ruta_datos_raw = BASE_DIR / "data" / "raw" /  "ventas_raw.csv"
     datos_crudos = read_csv(ruta_datos_raw)
     print(f"   Filas leídas: {len(datos_crudos)}")
 
